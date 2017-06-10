@@ -117,7 +117,7 @@ class Excellon():
         ex = []
         ex.append('M48\n') # Beginning of a part program header
         ex.append('METRIC,TZ\n') # Metric, trailing zeros
-        ex.append('G90\n') # Absolute mode
+        #ex.append('G90\n') # Absolute mode   # macrofab doesn't like this ???
         ex.append('M71\n') # Metric measuring mode        
         return ex
 
