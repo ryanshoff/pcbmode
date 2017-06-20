@@ -181,6 +181,8 @@ def dictFromJsonFile(filename, error=True):
             msg.error("Couldn't open JSON file: %s" % filename, IOError)
         else:
             msg.info("Couldn't open JSON file: %s" % filename, IOError)
+    except ValueError as e:
+        msg.error("filename: %s" % filename, e)
 
     return json_data
 
