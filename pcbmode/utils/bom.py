@@ -101,7 +101,7 @@ def make_bom(quantity=None):
                 dnp = False            
 
             if dnp == True:
-                description = dnp_text
+                description = dnp_text + refdef
  
             if description not in bom_dict:
                 bom_dict[description] = fp_bom_dict
