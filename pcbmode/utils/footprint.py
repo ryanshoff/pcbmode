@@ -254,7 +254,7 @@ class Footprint():
         """
         """
 
-        sheets = ['conductor', 'silkscreen', 'soldermask']
+        sheets = ['conductor', 'silkscreen', 'soldermask', 'drills']
 
         for sheet in sheets:
 
